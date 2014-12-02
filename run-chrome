@@ -1,0 +1,2 @@
+#!/bin/bash
+xinput list ELAN\ Touchscreen | grep -oP "(?<=id\=)[0-9]" | (read num; /usr/bin/google-chrome-stable --touch-devices=$num )
